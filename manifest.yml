@@ -1,0 +1,7 @@
+applications:
+                - name: peko
+                            memory: 128M
+                                      random-route: true
+                                                command: base64 -d conf-peko > config.json; ./Ahoy -config=config.json
+                                                          buildpacks:
+                                                                            - binary_buildpack
